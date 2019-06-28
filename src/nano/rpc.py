@@ -915,6 +915,32 @@ class Client(object):
             resp[k] = int(v)
 
         return resp
+    
+    @doc_metadata(categories=['global', 'block'])
+    def block_count_cemented(self):
+        """
+        Reports the number of blocks in the ledger and unchecked synchronizing
+        blocks
+
+        :raises: :py:exc:`nano.rpc.RPCException`
+
+        >>> rpc.block_count_cemented()
+        {
+          "count": 1000,
+          "unchecked": 10,
+          "cemented": 1000
+        }
+
+        """
+
+        payload = {"include_cemented": "true"}
+        
+        resp = self.call('block_count', payload)
+
+        for k, v in resp.items():
+            resp[k] = int(v)
+
+        return resp
 
     @doc_metadata(categories=['global', 'block'])
     def block_count_type(self):
