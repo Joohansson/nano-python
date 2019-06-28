@@ -919,8 +919,8 @@ class Client(object):
     @doc_metadata(categories=['global', 'block'])
     def block_count_cemented(self):
         """
-        Reports the number of blocks in the ledger and unchecked synchronizing
-        blocks
+        Reports the number of blocks in the ledger, unchecked synchronizing
+        blocks and cemented blocks. Available from node v19+.
 
         :raises: :py:exc:`nano.rpc.RPCException`
 
