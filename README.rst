@@ -21,7 +21,7 @@ Nano (RaiBlocks) Python Library
 .. image:: https://img.shields.io/pypi/v/nano-python.svg
     :target: https://pypi.python.org/pypi/nano-python
 
-This library contains a python wrapper for the Nano (RaiBlocks) RPC server
+This library contains a [python](https://www.interviewbit.com/blog/python-libraries/) wrapper for the Nano (RaiBlocks) RPC server
 which tries to make it a little easier to work with by converting RPC responses
 to native python ones and exposing a pythonic api for making RPC calls.
 
